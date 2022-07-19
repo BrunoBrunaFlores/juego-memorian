@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- BOOTSTRAP  -->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Memoria!</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+		<script type="text/javascript" src="memoria.js"></script>
+
+		<style>
+			body {
+				background-image: url("imagenes/fondo.jpg");
+  				/* background-repeat: repeat; */
+				/* background-color:darkorchid; */
+				
+			}
+			.tabla{
+				position: absolute;
+				left: 30%;
+			}
+			.ranking{
+				padding-left: 70%;
+				color: white;
+				font-size: 30px;
+				text-shadow: 4px 4px 8px black;
+			}
+			h1{
+				color: white;
+				font-family: fantasy;
+				font-size: 80px;
+				padding-left: 20px;
+				text-shadow: 4px 4px 8px black;
+			}
+			.subtitulo{
+				color: white;
+				font-size: 40px;
+				padding-left: 20px;
+				font-family: fantasy;
+				text-shadow: 4px 4px 8px black;
+			}
+			.relojp{
+				color: white;
+				font-size: 20px;
+				text-shadow: 4px 4px 8px black;
+				padding-left: 8px;
+				padding-bottom: 8px;
+
+			}
+		</style>
+
+	</head>
+	<body>
+		<h1>MEMORIAN!</h1>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+		<div class="tabla">
+			<img id="img00" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(0,0)"/>
+			<img id="img01" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(0,1)"/>
+			<img id="img02" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(0,2)"/>
+			<img id="img03" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(0,3)"/>
+			<br>
+			<img id="img10" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(1,0)"/>
+			<img id="img11" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(1,1)"/>
+			<img id="img12" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(1,2)"/>
+			<img id="img13" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(1,3)"/>
+			<br>
+			<img id="img20" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(2,0)"/>
+			<img id="img21" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(2,1)"/>
+			<img id="img22" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(2,2)"/>
+			<img id="img23" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(2,3)"/>
+			<br>
+			<img id="img30" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(3,0)"/>
+			<img id="img31" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(3,1)"/>
+			<img id="img32" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(3,2)"/>
+			<img id="img33" class="img-thumbnail" src="imagenes/nulo2.jpg" width="150" height="150" onclick="destaparImg(3,3)"/>
+			<br>
+			<br>
+			<div class="d-grid gap-2">
+				<button class="btn btn-primary btn-lg" type="button" onclick="iniciarJuego()">Iniciar Juego</button>
+			</div>
+		</div>
+		<p class="subtitulo" id="puntaje"></p>
+		<div class="ranking">
+			<p class="subtitulo">RANKING!</p>
+			<p class="fw-bold" id="primerlugar" ></p>
+			<p class="fw-bold" id="segundolugar"></p>		
+			<p class="fw-bold" id="tercerlugar"></p>
+		</div>
+		<p class="relojp" id="reloj"></p>
+	</body>	
+</html>
